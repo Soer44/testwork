@@ -6,6 +6,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap" rel="stylesheet" />
 	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="itc-slider.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Главная</title>
 </head>
@@ -75,46 +76,26 @@
 			</div>
 
 				<!-- Слайдер -->
-
-				<div class="prod-about__slider">
-					<div class="prod-about__slide">
-                        <img class="prodimg" src="img/phot.png" alt="Фото">
-                    </div>
-                    <div class="prod-about__slide">
-                        <!-- <img src="img/slide2.png" alt="Фото"> -->
-                    </div>
-                    <div class="prod-about__buttons">
-                        <button class="prod-about__button-prev">
-                            <img src="img/prev.svg" alt="prev">
-                        </button>
-                        <button class="prod-about__button-next">
-                            <img src="img/next.svg" alt="next">
-                        </button>
-					</div>
-						<button class="btn">
-							<span class="btn__text">Где купить ></span>
-						</button>
-					</div>
-					<!-- Блок адаптива для мобильного устройства  -->
-					<div class="prod-about__slidermobile">
-						<div class="prod-about__slide">
-							<img class="prodimg" src="img/mobile.png" alt="Фото">
+				<div class="slider" data-slider="itc-slider">
+					<div class="slider__wrapper">
+					  <div class="slider__items">
+						<div class="slider__item">
+						  <img src="img/slide1.png" alt="Фото">
 						</div>
-						<div class="prod-about__slide">
-							<!-- <img src="img/slide2.png" alt="Фото"> -->
+						<div class="slider__item">
+						  <img src="img/slide2.png" alt="Фото">
 						</div>
-						<div class="prod-about__buttons">
-							<button class="prod-about__button-prev">
-								<img src="img/prevmob.svg" alt="prev">
-							</button>
-							<button class="prod-about__button-next">
-								<img src="img/nextmob.svg" alt="next">
-							</button>
+					  </div>
+					</div>
+						<div class="btn__slider">
+							<img src="img/prev.svg" class="slider__control btn-prev" data-slide="prev"></img>
+							<img src="img/next.svg" class="slider__control btn-next" data-slide="next"></img>
 						</div>
 							<button class="btn">
 								<span class="btn__text">Где купить ></span>
 							</button>
-					</div>
+						
+				  </div>
 		</div>
 
 
@@ -213,34 +194,30 @@
 		</div>
 
 		<!-- слайдер о производстве -->
-
-		<div class="slider-prod">
-			<div class="production__right">
-				<img src="img/youtube2.jpg" alt="" class="production__pic">
-				<div class="production__slider">
-					<div class="production__slide play" data-url="PZjLSsUdYh8">
-						<img src="img/youtube1.jpg" alt="">
-					</div>
-					<div class="production__slide play" data-url="eFGv7ekh36w">
-						<!-- <img src="img/youtube2.jpg" alt=""> -->
-					</div>
-				
-				<div class="production__buttons">
-					<button class="production__button production__button-prev">
-						<img src="img/prev.svg" alt="prev">
-					</button>
-					<button class="production__button production__button-next">
-						<img src="img/next.svg" alt="next">
-					</button>
+		<div class="slider" data-slider="itc-slider">
+			<div class="slider__wrapper">
+			  <div class="slider__items">
+				<div class="slider__item">
+				  <img src="img/slide1.png" alt="Фото">
 				</div>
-			 	</div>
+				<div class="slider__item">
+				  <img src="img/slide2.png" alt="Фото">
+				</div>
+			  </div>
 			</div>
-
-			<button class="btn2">
-				<span class="btn__text">Подробнее ></span>
-			</button>
-		</div>
-	</div>
+				<div class="btn__slider">
+					<img src="img/prev.svg" class="slider__control btn-prev" data-slide="prev"></img>
+					<img src="img/next.svg" class="slider__control btn-next" data-slide="next"></img>
+				</div>
+					<button class="btn2">
+						<span class="btn__text">Подробнее ></span>
+					</button>
+				
+				</div>
+		</div> 
+		
+		
+	
 <!-- Блок мнение специалистов -->
 
 <div class="opinion__container">
@@ -250,14 +227,15 @@
 	</div>
 		<!-- Слайдер -->
 	<div class="specialists__slider">
-		<div class="specialists__slide play" data-url="DpqPsCuJAMM">
-			<img src="img/sl1.jpg" alt="Фото">
+		<div id="hcg-slider-1" class="hcg-slider">
+			<div class="hcg-slide-container">
+				<div class="hcg-slider-body">
+						<img src="img/sl1.jpg" alt="image 1">
+				</div>
+			</div>
+			<div class="hcg-slide-dot-control"></div>
 		</div>
-		<div class="specialists__slide play" data-url="01LxwUThj_w">
-			<!-- <img src="img/sl2.jpg" alt="Фото"> -->
-		</div>          
-		<ul class="specialists__pag">
-		</ul>
+		
 	</div>
 
 </div>
@@ -405,7 +383,7 @@
 
 
 <script src='script.js'></script>	
-
+<script src="itc-slider.js" defer></script>
 
 </body>
 </html>
