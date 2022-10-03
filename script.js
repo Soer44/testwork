@@ -34,7 +34,6 @@
 // Блок мнение специалистов автолисталка
 
 (function(){
-	//If you want to include more images, add the link name and URL of the image in the array list below.
 		let images_list = [
 			{"url":"img/sl1.jpg","name":"image 1","link":""},
 			{"url":"img/sl2.jpg","name":"image 2","link":""},
@@ -43,11 +42,11 @@
 	
 		let slider_id = document.querySelector("#hcg-slider-1");
 	
-		// append all images
+
 		let dots_div = "";
 		let images_div = "";
 		for (let i = 0; i < images_list.length; i++) {
-			// if no link without href="" tag
+
 			let href = (images_list[i].link == "" ? "":' href="'+images_list[i].link+'"');
 			images_div += '<a'+href+' class="hcg-slides animated"'+(i === 0 ? ' style="display:block"':'')+'>'+
 							'<img src="'+images_list[i].url+'" alt="'+images_list[i].name+'">'+
