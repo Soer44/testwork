@@ -89,7 +89,10 @@
 		setInterval(function(){
 			slide_index++;
 			showSlides();
-		}, 7000);
+		}, 2000);
 	
 	})();
 	
+	function toggleOrder() {
+		document.querySelector('.prod-slider').classList.toggle('reverse-order');
+	}
