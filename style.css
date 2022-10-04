@@ -1097,6 +1097,9 @@ body {
 
 
 @media (max-width: 1207.98px) {
+	.btn {
+		border-color: #000;
+	}
 	.content__container {
 		max-width: 1200px;
 		margin: 0 auto;
@@ -1138,7 +1141,19 @@ body {
 }
 
 
-
+@media (max-width: 1091.98px){
+	.footer__container {
+		margin-left: 30px;
+		margin-right: 10px;
+	}
+	.footer__h1 {
+		margin-left: 10px;
+		font-size: 22px;
+	}
+	.footer__block2 {
+		margin-right: 10px;
+	}
+}
 
 
 @media (max-width: 1071.98px){
@@ -1259,9 +1274,8 @@ body {
 		margin-top: 40px;
 		
 	}
-	.btn2 {
-		
-		
+	.footer__soc {
+		margin-right: 5px;	
 		
 	}
 
@@ -1271,6 +1285,13 @@ body {
 		margin-left: 10px;
 	}
 	
+	.footer-block {
+		display: flex;
+		gap: 10px;
+	}
+	.footer__block4 {
+		margin-top: 10px;
+	}
 }
 @media (max-width: 663.98px) {
 	.benefits__self {
