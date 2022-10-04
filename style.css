@@ -38,16 +38,12 @@ h1, h2, h3, h4
 
 html,
 body {
+	margin: 0;
     height: 100%;
 
 }
 
-.content__container {
-	width: 100%;
-	max-width: 1440px;
-	margin: 0 auto;
-	padding: 0 ;
-}
+
 
 .main {
 	flex: 1 1 auto;
@@ -58,6 +54,13 @@ body {
 	overflow-x: 0;
     display: flex;
     flex-direction: column;
+	margin: 0 auto;
+}
+.content__container {
+	width: 100%;
+	max-width: 1440px;
+	margin: 0 auto;
+	padding: 0 ;
 }
 .header {
 
@@ -108,7 +111,7 @@ body {
 }
 
 .prod-about__stomach {
-	max-width: 1440px;
+	/* max-width: 1440px; */
 	position: absolute;
 	z-index: 0;
 	
@@ -212,6 +215,9 @@ body {
 				
 .running-text {
 	overflow: hidden;
+	width: 100vw;
+	
+
 }
 
 
@@ -836,7 +842,8 @@ body {
 	color: #fff;
 }
 .footer__shadow {
-	max-width: 100%;
+	width: 100vw;
+
 	height: 61px;
 	background: linear-gradient(360deg, rgba(71, 9, 62, 0.5) -7.14%, rgba(255, 255, 255, 0) 100%);
 	background-blend-mode: multiply;
