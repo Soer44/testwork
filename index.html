@@ -39,7 +39,8 @@
 <main class="main">
 
 		<div class="main-block__container">
-			<svg class="prod-about__stomach" xmlns="http://www.w3.org/2000/svg" width="100%" height="761px" fill="none">
+			<svg class="prod-about__stomach" xmlns="http://www.w3.org/2000/svg" width="100%" height="859px" fill="none">
+				
 				<path fill="url(#paint0_linear)"
 					d="M1150 8.61221C843.181 86.7086 842.5 458.768 441.962 309.552C303.655 258.027 114.83 309.891 -2 358.578V402.142C-2 402.142 307 260.5 606.5 613.5C906 966.5 1440 575 1440 575V93.9001C1322.5 37.0415 1272.82 -22.6491 1150 8.61221Z" />
 				<defs>
@@ -174,7 +175,8 @@
 
 <!-- Блок О производстве препарата -->
 
-	<div class="about-prod__container">
+<div class="about-prod__container">
+		
 		<svg class="production__wave" xmlns="http://www.w3.org/2000/svg" width="100%" height="859" fill="none">
 			<path d="M1154.4 51.0913C876.813 192.242 809.376 302.125 389.958 269.186C143.301 249.815 0 334.565 0 334.565L2.28564e-05 576.116C2.28564e-05 576.116 175.756 431.385 616.144 681.919C1056.53 932.453 1440 842.168 1440 842.168V7.10834C1440 7.10834 1306.19 -26.0934 1154.4 51.0913Z" fill="url(#paint0_linear11)"/>
 			<defs>
@@ -190,33 +192,43 @@
 			</defs>
 		</svg>
 		<div class="about-prod-text">
-			<h1>О производстве<br>Венарус</h1>
+			<h1>О производстве Венарус</h1>
 		</div>
 
 		<!-- слайдер о производстве -->
-		<div class="prod-slider__container prod-row">
-			<div class="prod-slider__container prod-slider">
-				<div class="prod-slide">
-					<img src="img/3.png" />
-				</div>
-				<div class="prod-slide">
-					<img src="img/1.png" />
-				</div>
+		<div class="about-prod-slider__wrapper">
+			
+			<div class="prod-slider__container prod-row">
+			
+					<div class="prod-slider__container prod-slider">
+						<div class="prod-slide">
+							<img src="img/3.png" />
+						</div>
+						<div class="prod-slide">
+							<img src="img/1.png" />
+						</div>
+					</div>
+					<div class="prod-slider__container prod-col">
+						<button class="prev" onclick="toggleOrder()">
+							<img src="img/prev.svg" alt="">
+						</button>
+						<button class="next" onclick="toggleOrder()">
+							<img src="img/next.svg" alt="">
+						</button>
+					</div>
+
 			</div>
-			<div class="prod-slider__container prod-col">
-				<button class="prev" onclick="toggleOrder()">
-					<img src="img/prev.svg" alt="">
-				</button>
-				<button class="next" onclick="toggleOrder()">
-					<img src="img/next.svg" alt="">
-				</button>
+
+			<div class="btn2__container">
 				<button class="btn2">
 					<span class="btn__text">Подробнее ></span>
 				</button>
 			</div>
+			
 		</div>
+</div>
 		
-		</div> 
+		
 		
 		
 	

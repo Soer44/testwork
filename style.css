@@ -55,6 +55,7 @@ body {
 .wrapper{
 	width: 100%;
     overflow: hidden;
+	overflow-x: 0;
     display: flex;
     flex-direction: column;
 }
@@ -110,6 +111,7 @@ body {
 	max-width: 1440px;
 	position: absolute;
 	z-index: 0;
+	
 	
 
 
@@ -217,30 +219,34 @@ body {
 
 
 .running-text__infinite {
+	max-width: 100%;
+	overflow: hidden;
+	padding-top: 55px;
+}
+
+.running-text__container {
 	display: flex;
-	
 	border: 1px solid #47093e;
 	width: 200%;
-	animation-iteration-count:infinite;
 	animation: marquee-infinite 60s linear infinite;
 	padding: 15px 0 20px 0;
 	color: #590d56;
-	
+	text-decoration: none;
 }
-.running-text__container {
-		animation-play-state: paused;
-		text-decoration: none;
+
+.running-text__container:hover {
+	animation-play-state: paused;
 }
+
 .running-text__self {
 	white-space: nowrap;
 	width: 100%;
+	font-family: 'Roboto';
+	font-style: normal;
 	text-transform: uppercase;
 	font-weight: 300;
 	font-size: 48px;
 	line-height: 56px;
-	font-family: 'Roboto';
-	font-style: normal;
-	color: #590D56;
 }
 
 @keyframes marquee-infinite {
@@ -443,13 +449,18 @@ body {
 	align-items: center;
 	min-height: 800px;
 }
+.about-prod-slider__wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
 .production__wave {
 	position: absolute;
 	top: -50px;
 	
 }
 .about-prod-text {
-	max-width: 312px;
+	max-width: 400px;
 	margin-left: 150px;
 	margin-top: -100px;
 	margin-right: 50px;
@@ -462,9 +473,10 @@ body {
 	z-index: 1;
 }
 
+
 .prod-slider__container {
 	display: flex;
-	/* max-width: 800px; */
+	max-width: 800px;
 }
 
 .prod-slider,
@@ -481,7 +493,9 @@ body {
 	
 	
 }
-
+.prod-slider__container.prod-row {
+	margin-right: 150px;
+}
 .prod-col {
 	flex-direction: column;
 }
@@ -543,24 +557,20 @@ body {
 }
 
 
-
-
-
+.btn2__container {
+	display: flex;
+	
+	position: relative;
+	margin: 15px -310px 0 0 ;
+}
 
 .btn2 {
-	position: absolute;
 	width: 263px;
 	height: 67px;
 	border-radius: 33.5px;
 	border: 1px solid #FFFFFF;
 	color:rgb(255, 255, 255);
-	right: 15px;
-	bottom: 150px;
-	
 }
-
-
-
 
 
 
@@ -658,9 +668,7 @@ body {
 	position: absolute;
 	top: -5px;
 }
-.useful__wave path {
-	transform: scaleX(1.32)
-}
+
 
 .useful-blocks {
 	margin-right: 150px;
@@ -1235,12 +1243,25 @@ body {
 		display: flex;
 		flex-direction: column;
 	}
+	.prod-slider__container.prod-row {
+		margin: 0;
+	}
+	.prod-slider__container.prod-col {
+		margin-top: 40px;
+		
+	}
+	.btn2 {
+		
+		
+		
+	}
 
 }
 @media (max-width: 702.98px) {
 	.benefits__container {
 		margin-left: 10px;
 	}
+	
 }
 @media (max-width: 663.98px) {
 	.benefits__self {
@@ -1288,15 +1309,50 @@ body {
 	.popup__close {
 		right: 50px;
 	}
+	.prod-slider__container.prod-row {
+		margin: 0;
+	}
+	.prod-slider__container.prod-col {
+		margin-top: 40px;
+	}
+	.btn2 {
+		margin: 0;
+		left: 10%;
+	}
 }
 
 
 
-/* МОБИЛЬНОЕ УТСРОЙСТВО!!!!!!!!!!!!!!!!!!!! */
-@media (max-width: 320px) {
+/* МОБИЛЬНЫЕ УТСРОЙСТВА!!!!!!!!!!!!!!!!!!!! */
+@media (max-width: 444.98px) {
+	.header__container {
+		margin-left: 10px;
+	}
+	.header__search {
+		margin-left: 10px;
+	}
+	.main-block__content-text {
+		margin-left: 10px;
+	}
+	.slider{
+		max-width: 375px;
+		height: auto;
+	}
+	.prod-slider__container.prod-row {
+		margin: 0;
+	}
+	.btn2 {
+		margin: 0;
+		left: 10%;
+	}
+}
+
+@media (max-width: 375px) {
+	
 	.content__container {
+		
 		margin: 0 auto;
-		width: 320px;
+		width: 375px;
 	}
 	.header__container {
 		padding: 0;
@@ -1315,25 +1371,27 @@ body {
 		width: 33px;
 		height: 25px;
 	}	
+	
 	.main-block__container {
 		padding: 0;
 		position: absolute;
-		min-width: 320px;
-		background-image: url(img/fon.svg);
-		background-repeat: no-repeat;
+		width: 375px;
+		background: url(img/fon.svg) no-repeat;
 		background-position-y: 60px;
+
 	}
+	
 	.main-block__content {
-		height: 200px;
+		height: 240px;
 		position: relative;
 		
 	}
 	.main-block__content-text{
 		width: 292px;
 		height: 221px;
-		margin: 15px;
-		left: 13px;
-		top: 71px;
+		margin: 20px 15px 0px 13px;
+		
+		
 		font-family: 'Merriweather';
 		font-style: normal;
 		font-weight: 700;
@@ -1341,9 +1399,23 @@ body {
 		line-height: 90%;
 		color: #000000;
 	}
-	
+	.btn {
+		width: 132px;
+		height: 34px;
+		margin-right: 20px;
+		
+	}
+	.btn__text {
+		font-family: 'Roboto';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 16px;
+		text-align: center;
+		color: #5B0E58;
+	}
 	.slider {
-		max-width: 320px;
+		max-width: 375px;
 		position: absolute;
 	
 	}
@@ -1357,6 +1429,7 @@ body {
 	.btn__slider img{
 		width: 35px;
 		height: 35px;
+		margin-right: 15px;
 		background-color: #fff;
 		background-image: url(img/prevmob.svg);
 	}
