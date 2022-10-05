@@ -1164,11 +1164,25 @@ body {
 	}
 	.useful-inf-text {
 		margin-left: 50px;
-		margin-top: 50px;
+		margin-top: 80px;
 	}
 	.useful-blocks {
 		margin-left: 50px;
 		margin-top: 50px;
+	}
+	.opinion__container {
+		display: flex;
+		margin-top: -170px;
+		flex-direction: column;
+		
+	}
+	.opinion-text {
+		margin-bottom: 30px;
+		margin-left: 50px;
+		
+	}
+	.specialists__slider {
+		margin-left: 50px;
 	}
 }
 
@@ -1248,6 +1262,7 @@ body {
 	
 	.opinion__container {
 		display: flex;
+		margin-top: -170px;
 		flex-direction: column;
 		
 	}
@@ -1264,6 +1279,7 @@ body {
 		color: #000;
 		bottom: 80px;
 	}
+	
 }
 @media (max-width: 1040.98px) {
 	.main-block__container {
