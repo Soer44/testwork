@@ -992,6 +992,10 @@ body {
 
 }
 
+.footer__block4 p {
+	padding-right: 42px;
+}
+
 .footer__block5 {
 	display: flex;
 	margin-left: 73px;
