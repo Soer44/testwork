@@ -199,15 +199,16 @@
 		<div class="about-prod-slider__wrapper">
 			
 			<div class="prod-slider__container prod-row">
-			
+				<script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
 					<div class="prod-slider__container prod-slider">
 						<div class="prod-slide">
-							<img src="img/3.png" />
+							<img id="popup__toggle" src="img/3.png">
 						</div>
-						<div class="prod-slide">
-							<img src="img/1.png" />
+						<div class="prod-slide" >
+							<img id="popup__toggle" src="img/1.png">
 						</div>
 					</div>
+					
 					<div class="prod-slider__container prod-col">
 						<button class="prev" onclick="toggleOrder()">
 							<img src="img/prev.svg" alt="">
@@ -216,7 +217,12 @@
 							<img src="img/next.svg" alt="">
 						</button>
 					</div>
-
+					<div class="popup__overlay">
+						<div class="popupyou">
+						  <img src="img/popupesc.png" class="popup__esc" alt="CLOSE">
+						  <iframe id="existing-iframe-example" type="text/html" src="https://www.youtube.com/embed/Dt0iuK3nyzA" frameborder="0" allowfullscreen></iframe>
+						</div>
+					  </div>
 			</div>
 
 			<div class="btn2__container">

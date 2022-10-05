@@ -92,6 +92,55 @@
 	
 	})();
 	
-	function toggleOrder() {
-		document.querySelector('.prod-slider').classList.toggle('reverse-order');
-	}
+
+
+
+let player = null;
+let tag = document.createElement("script");
+tag.id = "iframe-api";
+tag.src = "https://www.youtube.com/iframe_api";
+let firstScriptTag = document.getElementsByTagName("script")[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+function toggleOrder() {
+  document.querySelector(".prod-slider").classList.toggle("reverse-order");
+}
+
+
+function onYouTubeIframeAPIReady() {
+  player = new YT.Player("existing-iframe-example");
+}
+
+let elPopupClose = $(".popup__esc");
+let elPopupOverlay = $(".popup__overlay");
+let elPopupToggle = $("#popup__toggle, #popup__toggle1");
+
+
+
+function popupDidClose() {
+  if (player !== null) {
+    player.pauseVideo();
+  }
+}
+
+elPopupClose.click(function () {
+  elPopupOverlay.css({ display: "none", visibility: "hidden", opacity: 0 });
+  popupDidClose();
+});
+
+elPopupOverlay.click(function (event) {
+  event = event || window.event;
+  if (event.target === this) {
+    elPopupOverlay.css({ display: "none", visibility: "hidden", opacity: 0 });
+    popupDidClose();
+  }
+});
+
+elPopupToggle.click(function () {
+  elPopupOverlay.css({ display: "block", visibility: "visible", opacity: 1 });
+});
+
+
+
+
+
