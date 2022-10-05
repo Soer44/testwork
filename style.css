@@ -1601,3 +1601,56 @@ body {
 		display: none;
 	}
 }
+
+@media (max-width: 360px) {
+	.header__container {
+		max-width: 320px;
+	}
+	.header__menu {
+		margin-right: 20px;
+	}
+	.header__burger {
+		margin-left: 10px;
+	}
+	.popup__container {
+		min-width: 320px;
+	}
+	
+	.popup__menu {
+		margin: 33px 30px;
+	}
+	.popup__link {
+		margin-bottom: 55px;
+	}
+	.popup__close svg{
+		max-width: 33px;
+		height: 20px;
+	}
+	.popup__close {
+		right: 20px;
+	}
+	
+	.popup__logo img{
+		width: 135px;
+		height: 25px;
+	}
+	.popup__logo {
+		margin: 15px 15px;
+	}
+
+	.main-block__content-prod-about, 
+	.running-text,
+	.benefits__container,
+	.action__container,
+	.about-prod__container,
+	.slider-prod,
+	.opinion__container,
+	.useful-inf__container,
+	.where-bay__container,
+	.footer,
+	.prod-about__stomach,
+	.footer__shadow
+	{
+		display: none;
+	}
+}
