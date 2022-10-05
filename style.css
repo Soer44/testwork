@@ -1577,11 +1577,11 @@ body {
 		margin-bottom: 55px;
 	}
 	.popup__close svg{
-		width: 33px;
+		max-width: 33px;
 		height: 20px;
 	}
 	.popup__close {
-		right: 50px;
+		right: 70px;
 	}
 
 
