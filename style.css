@@ -1514,7 +1514,7 @@ body {
 		height: 50px;
 	}
 	.popup__close {
-		right: 50px;
+		
 	}
 	.prod-slider__container.prod-row {
 		margin: 0;
@@ -1734,13 +1734,16 @@ body {
 	.popup__link {
 		margin-bottom: 55px;
 	}
+	.popup__close {
+		width: 33px;
+		height: 20px;
+		
+	}
 	.popup__close svg{
 		max-width: 33px;
 		height: 20px;
 	}
-	.popup__close {
-		right: 50px;
-	}
+	
 
 	
 	.main-block__content-prod-about, 
@@ -1785,7 +1788,7 @@ body {
 		height: 20px;
 	}
 	.popup__close {
-		right: 50px;
+		right: 10px;
 	}
 	
 	.popup__logo img{
@@ -1815,16 +1818,7 @@ body {
 	.popup__container {
 		width: 280px;
 	}
-	.popup__close {
-		right: 40px;
-	}
-	.btn {
-		margin: 0 auto;
-	}
-	.btn__slider img{
-		margin: 0 auto;
-		
-	}
+	
 	.popup__close {
 		right: 55px;
 	}
