@@ -1737,7 +1737,7 @@ body {
 	.popup__close {
 		width: 33px;
 		height: 20px;
-		
+		right: 15px;
 	}
 	.popup__close svg{
 		max-width: 33px;
