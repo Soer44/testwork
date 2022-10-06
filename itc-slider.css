@@ -30,7 +30,10 @@
 	max-width: 100%;
 	user-select: none;
 	will-change: transform;
-
+}
+.slider__item img{
+	max-width: 100%;
+	height: auto;
 }
 
 .slider__items {
@@ -61,7 +64,8 @@
 
 .btn__slider {
 	display: flex;
-	padding: 30px;
+	padding-top: 30px;
+	padding-bottom: 30px;
 }
 
 
@@ -92,3 +96,8 @@
 	right: 0;
 }
 
+@media (max-width: 375px) {
+	.slider {
+		display: none;
+	}
+}

@@ -81,6 +81,26 @@
 					<div class="slider__wrapper">
 					  <div class="slider__items">
 						<div class="slider__item">
+						  <img src="img/slide11.png" alt="Фото">
+						</div>
+						<div class="slider__item">
+						  <img src="img/slide22.png" alt="Фото">
+						</div>
+					  </div>
+					</div>
+						<div class="btn__slider">
+							<img src="img/prev.svg" class="slider__control btn-prev" data-slide="prev"></img>
+							<img src="img/next.svg" class="slider__control btn-next" data-slide="next"></img>
+						</div>
+							<button class="btn">
+								<span class="btn__text">Где купить ></span>
+							</button>
+				</div>
+				  
+				<div class="slidermob" data-slider="itc-slider">
+					<div class="slider__wrapper">
+					  <div class="slider__items">
+						<div class="slider__item">
 						  <img src="img/slide1.png" alt="Фото">
 						</div>
 						<div class="slider__item">
@@ -95,9 +115,11 @@
 							<button class="btn">
 								<span class="btn__text">Где купить ></span>
 							</button>
-						
-				  </div>
+				</div>
+
+
 		</div>
+		
 
 	</div>
 <!-- Бегущая строка-->
@@ -202,10 +224,10 @@
 				<script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
 					<div class="prod-slider__container prod-slider">
 						<div class="prod-slide">
-							<img id="popup__toggle" src="img/3.png">
+							<img class="popup-btn" src="img/3.png">
 						</div>
 						<div class="prod-slide" >
-							<img id="popup__toggle" src="img/1.png">
+							<img class="popup-btn" src="img/1.png">
 						</div>
 					</div>
 					
@@ -217,12 +239,15 @@
 							<img src="img/next.svg" alt="">
 						</button>
 					</div>
-					<div class="popup__overlay">
-						<div class="popupyou">
-						  <img src="img/popupesc.png" class="popup__esc" alt="CLOSE">
-						  <iframe id="existing-iframe-example" type="text/html" src="https://www.youtube.com/embed/Dt0iuK3nyzA" frameborder="0" allowfullscreen></iframe>
+					
+						<div class="video-popup">
+							<div class="popup-bg"></div>
+							<div class="popup-content">
+						  <img src="img/popupesc.png" class="close-btn" alt="CLOSE">
+						  <iframe id="iframe-player" class="video" src="https://www.youtube.com/embed/Dt0iuK3nyzA?enablejsapi=1" allowscriptaccess="always"></iframe>
+							</div>
 						</div>
-					  </div>
+					  
 			</div>
 
 			<div class="btn2__container">
@@ -309,11 +334,21 @@
 		</a>
 	</div>
 	</div>
-	<button class="btn3">
-		<span class="btn__text">Подробнее ></span>
-	</button>
-</div>
 
+</div>
+			<div class="usefulblock__mobile">
+			
+				<a href="#" class="useful__link"><span class="useful__links-text useful__links-text1">Профилактические упражнения</span>
+				</a> 
+				 <a href="#" class="useful__link"><span class="useful__links-text useful__links-text2">Диагностика и способы лечения</span>
+				 </a>
+				<a href="#" class="useful__link"><span class="useful__links-text useful__links-text3">Рекомендации по  питанию</span>
+				</a>
+				<a href="#" class="useful__link"><span class="useful__links-text useful__links-text4">Факты о варикозе</span></a>
+			</div>
+			<button class="btn3">
+				<span class="btn__text">Подробнее ></span>
+			</button>
 </div>
 
 
